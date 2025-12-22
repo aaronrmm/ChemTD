@@ -1,0 +1,24 @@
+[gd_scene load_steps=4 format=3 uid="uid://odxu3wwm1o0u"]
+
+[ext_resource type="Script" uid="uid://b8lcl1tgtvlld" path="res://temp/World.gd" id="1_fm0qr"]
+[ext_resource type="Resource" uid="uid://oo2qrnx1ds5" path="res://temp/center_attractor_force.tres" id="3_1h6in"]
+[ext_resource type="Script" uid="uid://bsjerysnjy0qe" path="res://temp/MultiMeshParticleRenderer.gd" id="3_fm0qr"]
+
+[node name="Main" type="Node2D"]
+script = ExtResource("1_fm0qr")
+force_field = ExtResource("3_1h6in")
+initial_particle_count = 30000
+
+[node name="Particles" type="Node2D" parent="."]
+
+[node name="Core" type="Node2D" parent="."]
+position = Vector2(500, 500)
+
+[node name="StatsLabel" type="Label" parent="."]
+offset_right = 40.0
+offset_bottom = 23.0
+text = "--/--"
+
+[node name="ParticleRenderer" type="MultiMeshInstance2D" parent="."]
+script = ExtResource("3_fm0qr")
+metadata/_custom_type_script = "uid://bsjerysnjy0qe"

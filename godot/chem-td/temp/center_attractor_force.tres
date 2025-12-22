@@ -1,0 +1,8 @@
+[gd_resource type="Resource" script_class="CenterAttractorForce" load_steps=2 format=3 uid="uid://oo2qrnx1ds5"]
+
+[ext_resource type="Script" uid="uid://ncds48cac3sf" path="res://temp/CenterAttractorForce.gd" id="1_6ytr3"]
+
+[resource]
+script = ExtResource("1_6ytr3")
+center = Vector2(300, 300)
+metadata/_custom_type_script = "uid://ncds48cac3sf"
