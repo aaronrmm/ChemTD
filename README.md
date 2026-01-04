@@ -1,3 +1,4 @@
+```mermaid
 classDiagram
     direction LR
 
@@ -91,3 +92,4 @@ classDiagram
     CollisionModuleCS --> PackedVector2Array : reads/writes
     ForceField --> Vector2
     ParticleRenderer --> PackedVector2Array
+```
